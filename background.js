@@ -10,9 +10,8 @@ function toggleFilesOwned() {
 }
 
 chrome.action.onClicked.addListener((tab) => {
-    if((tab.url.includes("https://github.com/") 
-    || tab.url.includes("https://github.com/") 
-    && tab.url.includes("/pull/"))) {
+    if(tab.url.includes("https://github.com/") 
+    && tab.url.includes("/pull/")) {
       chrome.scripting.executeScript({
         target: { tabId: tab.id },
         function: toggleFilesOwned
