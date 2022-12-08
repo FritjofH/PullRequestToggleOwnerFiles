@@ -1,0 +1,1 @@
+var enabled=!1,myButton=document.getElementById("toggle");chrome.storage.local.get("enabled",(e=>{enabled=!!e.enabled,myButton.textContent=enabled?"Disable":"Enable"})),myButton.onclick=()=>{enabled=!enabled,myButton.textContent=enabled?"Disable":"Enable",chrome.storage.local.set({enabled})};
