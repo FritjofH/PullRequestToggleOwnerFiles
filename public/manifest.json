@@ -6,7 +6,7 @@
         "32": "icon32.png",
         "48": "icon48.png"
     },
-    "description": "Will automatically select 'Files owned by you' in case of large pull requests (more than 10 files).",
+    "description": "Will automatically select 'Files owned by you' in case of large pull requests (more than 10 files or total 150 additions and/or removals).",
     "author": "Fritjof Höst",
     "manifest_version": 3,
     "background": {
