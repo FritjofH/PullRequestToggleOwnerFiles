@@ -1,5 +1,5 @@
 function toggleFilesOwned() {
-    let checkbox = document.getElementsByName("owned-by-[]");
+    let checkbox = document.getElementsByName("owned-by[]");
     if (checkbox.length > 0) {
         var filesChanged = parseInt(document.getElementById("files_tab_counter").textContent);
         const onlyOwned = filesChanged > Number(10);
